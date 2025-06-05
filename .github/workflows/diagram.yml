@@ -11,6 +11,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
       - name: Update diagram
-        uses: javii995/examen-cloud@main
+        uses: githubocto/repo-visualizer@main
         with:
+          output_file: "diagram.svg"
           excluded_paths: "ignore,.github"
+          artifact_name: "diagram"
